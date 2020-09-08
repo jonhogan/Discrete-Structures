@@ -17,10 +17,21 @@ int NextHigh (int);
 
 int main ()
 {
+    int counter;
+    unsigned int number;
+
     ifstream InFile;
     ofstream OutFile;
 
     InFile.open("HighBits.dat");
+    
+    InFile >> counter;
+
+    for (int i =0; i < counter; i++)
+    {
+        InFile >> number;
+        HighBit(number);
+    }
 
 
 }

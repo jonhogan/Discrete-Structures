@@ -23,7 +23,7 @@ int main ()
     ifstream InFile;
     ofstream OutFile;
 
-    InFile.open("HighBits.dat");
+    InFile.open("HighBits");
     
     InFile >> counter;
 
